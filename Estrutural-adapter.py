@@ -1,9 +1,4 @@
-"""
-Meu sistema trabalha com um serviço interno que consulta filmes em um formato padrão (ex.: dicionários Python).
-Mas quero integrar um serviço externo de filmes que devolve os dados em outro formato (ex.: string invertida, JSON estranho, API antiga etc).
 
-O Adapter converte a interface do serviço externo para a interface interna do sistema.
-"""
 class CatalogoTarget:
 
     def buscar_filme(self, titulo: str) -> dict:
@@ -48,4 +43,5 @@ if __name__ == "__main__":
 
     print("\nCliente: Agora consigo usá-lo por meio do Adapter:")
     adapter = FilmeAdapter(externo)
+
     client_code(adapter)
