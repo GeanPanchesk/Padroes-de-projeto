@@ -1,12 +1,4 @@
-""" 
-Meu site precisa de um catálogo central, carregado apenas uma vez, que todas as partes do sistema consultam.
 
-Assim, usamos o Singleton para garantir que:
-
-o catálogo só seja carregado uma única vez,
-
-todas as páginas acessem a MESMA instância (mesmos filmes, sem duplicação).
-"""
 class SingletonMeta(type):
     _instances = {}
 
@@ -49,4 +41,5 @@ if __name__ == "__main__":
     if id(cat1) == id(cat2):
         print("OK! CatalogoFilmes é Singleton.")
     else:
+
         print("Falhou: instâncias diferentes.")
