@@ -167,8 +167,6 @@ from abc import ABC, abstractmethod
 from typing import List
 
 
-# ========== SUBJECT ==========
-
 class CatalogoFilmes(ABC):
     """
     Interface do Subject. Gerencia os observadores.
@@ -222,7 +220,6 @@ class Catalogo(CatalogoFilmes):
         return self._ultimo_filme_adicionado
 
 
-# ========== OBSERVERS ==========
 
 class Observer(ABC):
     """
@@ -261,7 +258,6 @@ class Recomendador(Observer):
         print(f"Recomendador: Recalculando recomendações incluindo '{subject.ultimo_filme}'...")
 
 
-# ========== CLIENTE ==========
 
 if __name__ == "__main__":
     catalogo = Catalogo()
