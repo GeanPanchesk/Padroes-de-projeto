@@ -321,10 +321,9 @@ classDiagram
     Observer <|-- Recomendador
 
     Catalogo --> Observer : "notifica"
-
-Esse código aplica o padrão Observer no catálogo de filmes.
-Sempre que um filme é adicionado, vários serviços (e-mail, recomendador, logger etc.) são automaticamente notificados.
-Isso permite que novos módulos reajam a eventos do sistema sem alterar o código central do catálogo, garantindo baixo acoplamento e escalabilidade.
+    Esse código aplica o padrão Observer no catálogo de filmes.
+    Sempre que um filme é adicionado, vários serviços (e-mail, recomendador, logger etc). são automaticamente notificados.
+    Isso permite que novos módulos reajam a evento do sistema sem alterar o código central do catálogo, garantindo baixo acoplamento e escabilidade.
 -----------------------------------------------------------------------------------------------------
 *Este arquivo usa como base os padrões apresentados pelo refactoring.guru
 *Também conta com o auxílio da LLM Chatgpt
